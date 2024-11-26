@@ -1,0 +1,4 @@
+AWS account 
+3 instances (1 master (2cpu, 4 GB), 2 worker (1cpu, 2 GB))
+Edit INBOUBD rules in both master and worker
+For master 
