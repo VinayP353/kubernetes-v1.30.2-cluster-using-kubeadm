@@ -2,7 +2,8 @@ AWS account
 3 instances (1 master (2cpu, 4 GB), 2 worker (1cpu, 2 GB))
 Edit INBOUBD rules in both master and worker
 For master and worker nodes (check in the kubernetes documentation)
-follow the installation steps unitll the step 9 in all three nodes and make sure to change the step 7 from (nano to vi) 
+make sure to change the step 7 from (nano to vi) and it should be done individually on each server and need to save forcefully (:wq!)
+follow the installation steps unitll the step 9 in all three nodes.
 step 10 should be run only on master node and copy the kubeadm join command.
 then paste this kubeadm join command on the both worker nodes to join.
 if container is not creating, check the port for weave because we used weave CNI pulgin (open port 6783)
